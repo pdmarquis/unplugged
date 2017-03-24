@@ -1,0 +1,1164 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1rem;  /* 14 px */
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/****** GLobal Styles ***********************************/
+
+/* COLORS =============================================
+Dark Pink (Magenta): #b21e49;
+Light Grey: #eeeeee;
+Bright Pink: #ff1256;
+Dark Grey: #222222;
+Blue: #23a4cc;
+Border: #dedbdc;
+============================================= */
+
+body, html{
+    background-color: #eeeeee;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+    line-height: 1.43em;
+}
+ 
+p{
+	color: #222222;
+	font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+h1, h2, h3, h4{
+	
+}
+ 
+h1{
+    color: #222222;
+	font-size: 2.57rem;
+    line-height: 2.5rem;
+}
+ 
+h2{
+    color: #222222;
+	font-size: 2.143rem;
+    line-height: 1.714rem;
+}
+ 
+h3{
+	color: #222222;
+	font-size: 1.714rem;
+    line-height: 1.714rem;
+}
+ 
+h4{
+	
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #222222;
+}
+
+/* figure had margins set in normalize.css, which was throwing off the format.  Added this to remove margins */
+
+figure {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.byline {
+    font-weight: bold;
+}
+
+/* Header */
+
+#header-main {
+    background-color: #dddddd;
+	width: 100%;
+}
+
+.logo {
+    background-color: #000000;
+    font-family: 'Sansita One', cursive;
+    text-align: center;
+}
+
+#header-main .logo {
+    font-size: 3rem;
+    line-height: 7rem;
+    margin: 0 0 1rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+.logo a  {
+    color: #ffffff;
+}
+
+.logo a:visited {
+    color: #ffffff;
+}
+
+/* Nav */
+
+nav {
+	width:100%;
+    margin: 0 0 1rem 0;
+}
+
+nav i{
+	padding-right:.7rem;
+}
+
+nav ul {
+    font-size: 1.5rem;
+    line-height: 1.57rem;
+    font-weight: bold;
+    padding: 0;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+nav ul li:nth-child(4) {
+  border-bottom: none;
+}
+
+nav li {
+    border-bottom: .07rem solid #cfcacb;
+    box-sizing: border-box;
+    clear: both;
+    list-style: none;
+/*    padding: .75rem .7rem .25rem 0;*/
+    padding: .75rem 0;
+    text-align: center;
+    width: 100%;   
+}
+
+/* Main Part of a Page */
+
+main {
+	width:96%;
+	padding: 2% 0;
+    margin: auto;
+}
+
+/* Hero area of News and Reviews Index Page */
+
+.hero-headline {
+    font-size: 1.5rem;
+    line-height: 1.57rem;
+}
+
+#hero-area, #hero-article, .top-info {
+    width: 100%;
+}
+
+.top-img {
+    height: auto;
+    width: 100%
+}
+
+#hero-area {
+    overflow: hidden;
+    padding-bottom: .5rem;
+    border-bottom: .07rem solid #dedbdc;
+}
+
+#hero-article {
+    
+/*    overflow: hidden;*/
+}
+
+.top-info header, p {
+    width: 100%
+};
+
+/* Top story area of a details page */
+
+#top-story {
+    width: 100%;
+    border-bottom: .07rem solid #dedbdc;
+}
+
+#top-story figure, header, p {
+    width: 100%;
+}
+
+#top-story figure header h1, p{
+    width: 100%;
+}
+
+/* Sidebar */
+
+aside {
+    width: 100%;
+}
+
+#sidebar-newsletter {
+    display: block;
+}
+
+#sidebar-newsletter .email, .submit-btn {
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.email, .email-details {
+    border: 2px solid #e5e5e5;
+    font-size: 1.285rem;
+    line-height: 1.714rem;
+    margin-bottom: .3rem;
+}
+
+.submit-btn, .submit-btn-details {
+    border: 0;
+    color: white;
+    text-align: center;
+    font-size: 1.285rem;
+    line-height: 1.714rem;
+    text-transform: uppercase;
+    background-color: #ff1256;
+    box-shadow: 2px 2px 0px rgba(178,30,73,40);
+}
+
+.email-details, .submit-btn-details {
+    width: 100%;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 1.285rem;
+    line-height: 1.714rem;
+    text-transform: uppercase;
+    background-color: #b21e49;
+    box-shadow: 2px 2px 0px rgba(34,34,34,25);
+}
+
+.btn:visited {
+    color: #ffffff;
+}
+
+.btn i {
+    padding-right: .7rem;
+}
+
+#sidebar-concerts, #sidebar-faq {
+    display: none;
+}
+
+aside .sidebar-section {
+    padding: 0 0 1.2rem 0;
+    width: 100%;
+    border-bottom: .07rem solid #dedbdc;
+}
+
+/* News and Reviews index pages feed area */
+
+#feed {
+    width: 100%;
+}
+
+#feed .feed-item:nth-child(7) {
+  border-bottom: none;
+}
+
+#feed h2, .feed-item {
+    width: 100%;
+}
+
+#feed h2 {
+    font-size: 1.143rem;
+    line-height: 1.143rem;
+}
+
+#feed h1 {
+    font-size: 1rem;
+    line-height: 1.143rem;
+    margin: 0;
+}
+
+.feed-item {
+    border-bottom: .07rem solid #dedbdc;
+    clear: both;
+    overflow: hidden;
+    padding: .5rem 0 .5rem 0;
+}
+
+#feed header {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.143rem;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+
+.feed-item header {
+    width: 100%;
+}
+
+.feed-item .feed-image, .feed-info {
+    float: left;
+    width: 50%;
+}
+
+.feed-image {
+    box-sizing: border-box;
+    padding-right: 1rem;
+}
+
+.feed-info p {
+    display: none;
+}
+
+/* Concert Page */
+
+#sec-page-h1 {
+    font-size: 1.5rem;
+}
+
+#concert-list {
+    width: 100%;
+}
+
+.concert {
+    box-sizing: border-box;
+    overflow: hidden;
+    border-bottom: .07rem solid #dedbdc;
+    width: 100%;
+    padding: 1.6rem 0rem .2rem 0rem;
+}
+
+.concert-date {
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    font-size: 1.285rem;
+    line-height: 1.286rem;
+    border: .15rem solid #aa979e;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 20%;
+    padding: .3rem 0 .3rem 0;
+}
+
+.concert-date span {
+    font-size: 1.714rem;
+}
+
+.concert-date p {
+    margin: 0;
+}
+
+.concert-info {
+    float: left;
+    width: 80%;
+    padding: 0 .5rem .5rem .5rem;
+    box-sizing: border-box;
+}
+
+.concert-info p {
+    margin: 0;
+    line-height: 1.3rem;
+}
+
+.concert-info p span {
+    font-weight: bold;
+}
+
+#concert-sidebar {
+    display: none;
+}
+
+.question {
+    border-bottom: .07rem solid #dedbdc; 
+}
+
+.question header {
+    font-size: 1.143rem;
+    width: 100%;
+}
+
+/* About Page */
+
+.sec-page-h2 {
+    font-size: 1.5rem;
+}
+
+#about-wrapper {
+    width: 100%;
+}
+
+.about-segment {
+    clear: both;
+    border-bottom: .07rem solid #dedbdc;
+    overflow: hidden;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+#team-section {
+    clear: both;
+    overflow: hidden;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+#contact-info {
+    width: 100%;
+    overflow: hidden;
+}
+    
+#contact-info span {
+    font-weight: bold;
+}
+
+#contact-info {
+/*    border: .2rem solid #ccc;*/
+    width: 100%;
+}
+
+#about-map {
+/*    border: .2rem solid #ccc;*/
+    position: relative;
+    padding-bottom: 75%;
+/*    height: 0;*/
+    overflow: hidden;
+/*    width: 100%;*/
+}
+
+#about-map iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-text, #addr {
+    width: 100%;
+    overflow: hidden;
+}
+
+.addr-title {
+    float: left;
+    font-weight: bold;
+    width: 25%;
+}
+
+.street-addr {
+    float: left;
+    width: 75%;
+    margin-bottom: 1rem;
+}
+
+.street-addr p {
+    margin: 0;
+}
+
+.team-member-picture, .team-member {
+    float: left;
+    width: 40%;
+}
+
+.team-member-picture {
+    clear: both;
+    margin: 0 2rem 1rem 0;
+	padding-bottom:40%;
+	border: .2rem solid #ccc;
+}
+
+#team-img-jack {
+    background: #333 url("../img/jack.jpg") center/cover no-repeat;
+}
+
+#team-img-lana {
+    background: #333 url("../img/lana.jpg") center/cover no-repeat;
+} 
+
+#team-img-willow {
+    background: #333 url("../img/willow.jpg") center/cover no-repeat;
+} 
+
+.team-member h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+
+.team-mem-descr {
+    display: none;
+}
+
+/* Footer */
+
+footer {
+    border-top: .07rem solid #dedbdc;
+    clear: both;
+    padding: .75rem 0 0 0;
+    width: 100%;
+}
+ 
+footer .logo{
+    font-size: 1.5rem;
+    line-height: 2.75rem;
+    width: 11rem;
+    margin: auto;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media all and (max-width:300px) {
+    #header-main .logo {
+        font-size: 2.5rem;
+    }
+}
+
+@media all and (min-width:768px){
+    
+    figure {
+        padding: 0 1rem 0 0;
+    }
+    
+    /* Header */
+    
+    #header-main {
+        overflow: hidden;
+    }
+    
+    #header-main .logo {
+        float: left;
+        margin: 0 1rem;
+        width: 40%;
+    }
+    
+    nav {
+        float: right;
+        width:55%;
+        position: relative;
+        top: 50%;
+        transform: translateY(150%);
+    }
+    
+    nav i {
+        padding-right: .3rem
+    }
+    
+    nav li {
+        border-bottom: none;
+        display: inline;
+        font-size: 1.143rem;
+        padding: 0 .7rem 0 0;
+    }
+    
+    /* Main Area */
+    
+    .top-img {
+        padding: 0;
+    }
+    
+    /* Sidebar */
+    
+    #sidebar-concerts, #sidebar-faq {
+        display: block;
+    }
+    
+    .sidebar-wrapper {
+        padding-left: 1rem;
+    }
+    
+    #feed h1 {
+        font-size: 1.143rem;
+        line-height: 1.143rem;
+    }
+    
+    /* Concert Page */
+    
+    #concert-list {
+        border-bottom: 1rem;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 2rem;
+        -moz-column-gap: 2rem;
+        column-gap: 2rem;
+    }
+    
+    #concert-list .concert {
+        border-bottom: none;
+    }
+    
+    .concert {
+        width: 24rem;
+        padding: 0 0 1rem 0;
+    }
+    
+    #sec-page-h1 {
+        font-size: 1.714rem;
+        margin: 2rem 0;
+        clear: both;
+    }
+    
+    .concert-date {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        width: 5rem;
+    }
+    
+    .concert-info {
+        font-size: 1.285rem;
+        line-height: 1.4rem;
+    }
+    
+    .concert-info p {
+        margin: 0;
+        line-height: 1.5rem;
+    }
+
+    .concert-info p span {
+        font-weight: bold;
+        line-height: 1.7rem
+    }
+    
+    .concert-date span {
+        font-weight: bold;
+        line-height: 1.8rem;
+    }
+    
+    .concert-info {
+        width: 18rem;
+    }
+    
+    /* About Page */
+    
+    .about-segment {
+        clear: both;
+        overflow: hidden;
+    }
+    
+    #about-map {
+    padding-bottom: 43%;
+    }
+    
+    #contact-info .contact-text {
+        float: left;
+        width: 33%;
+    }
+    
+    #contact-info #about-map {
+        float: left;
+        width: 57%;
+    }
+
+@media all and (min-width:768px) and (max-width:939px) {
+    /* Tablet Styles */
+    
+    html {
+        line-height: 1.57rem;
+    }
+    
+    /* Main Area */
+    
+    main {
+        clear: both;
+    }
+    
+    /* Hero Area */
+
+    #hero-article .top-img {
+        float: left;
+        width: 57%;
+    }
+    
+    #hero-article .top-info {
+        width: 37%;
+        float: right;
+    }
+    
+    .hero-headline {
+        font-size: 1.714rem;
+        margin: 0;
+    }
+    
+    /* Sidebar */
+    
+    aside {
+        clear: both;
+        float: right;
+        width: 40%;
+    }
+    
+    aside h2 {
+        font-size: 1.5rem;
+        line-height: 1.143rem;
+    }
+    
+    #sidebar-newsletter h2 {
+        margin-top: 1rem;
+    }
+    
+    .email-details {
+        display: inline;
+        width: 59%;
+    }
+
+    .submit-btn-details {
+        display: inline;
+        width: 39%;
+    }
+     
+    /* Feed Area */
+    
+    #feed {
+        float: left;
+        width: 60%;
+    }
+    
+    #feed header {
+        width: 100%;
+    }
+
+    #feed article {
+        clear: both;
+        width: 100%;
+    }
+
+    #feed article figure {
+        float: left;
+        width: 40%;
+    }
+    
+    #feed article .feed-info {
+        float: left;
+        width: 60%;
+    }
+    
+    feed h2 {
+        font-size: 1.286rem;
+        line-height: 1.143rem;
+    }
+    
+    feed h1 {
+        font-size: 1.286rem;
+        line-height: 1.429rem;
+    }
+    
+    feed header {
+        font-size: .857rem;
+        line-height: 1.143rem;
+    }
+    
+    footer {
+        clear: both;
+    }
+    
+    /* About Page */
+    
+    #about-map {
+        margin: 0 1rem 2rem 1rem;
+    }
+    
+    /* Details Pages */
+    
+    #top-story figure, header {
+        float: left;
+        width: 50%;
+    }
+    
+    #top-story figure {
+        padding: 0 1rem 1rem 0;
+        box-sizing: border-box;
+    }
+    
+    #top-story header h1 {
+        margin: 0;
+    }
+    
+    #top-story p {
+        clear: both;
+        width: 100%;
+    }
+    
+    #sidebar-detail {
+        width: 100%;
+    }
+    
+    #team-section {
+        clear: both;
+        overflow: hidden;
+        width: 50%;
+    }
+
+}
+ 
+@media all and (min-width:940px) {
+    
+    /* Header */
+    
+    #header-main .logo {
+        font-size: 4rem;
+    }
+    
+    nav ul {
+        float: right;
+    }
+
+    /* Desktop Styles */
+    
+    #hero-area {
+        float: left;
+        width: 65%;
+    }
+    
+    #hero-article .top-img, .top-info {
+        width: 100%;
+    }
+    
+    .top-img img {
+        max-width: 620px;
+    }
+
+    .top-info header, p {
+        width: 100%;
+    }
+    
+    /* Sidebar */
+    
+    aside {
+        clear: none;
+        float: right;
+        width: 35%;
+    }
+    
+    #sidebar-newsletter h2 {
+        margin-top: 0;
+    }
+    
+    /* Feed Area */
+    
+    #feed {
+        clear: both;
+        width: 100%;
+    }
+    
+    .feed-item .feed-image {
+        float: left;
+        width: 25%;
+    } 
+    
+    .feed-item .feed-info {
+        float: left;
+        width: 75%;
+    }
+    
+    .feed-info p {
+    display: block;
+    }
+    
+    /* details pages */
+    
+    #top-story {
+        float: left;
+        width: 65%;
+    }
+    
+    /* Concert Page */
+    
+    #concert-list {
+        float: left;
+        margin: 0 .5rem 1rem 0;
+        width: 64%;
+    }
+    
+    #concert-sidebar {
+        display: block;
+        width: 28%;
+    }
+    
+    /* About Page */
+    
+    #about-map {
+        margin: 0 3rem 3rem 3rem;
+    }
+    
+    .team-member-picture {
+        width: 22%;
+        padding-bottom: 22%;
+    }
+    
+    .team-member {
+        width: 70%;
+    }
+    
+    .team-mem-descr {
+        display: block;
+        width: 100%;
+    }
+
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
